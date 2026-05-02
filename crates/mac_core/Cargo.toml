@@ -3,7 +3,7 @@ lints.workspace = true
 [package]
 name = "tectonic_mac_core"
 license = "MIT"
-version = "0.0.0-dev.0"
+version = "0.0.0+20260502"
 edition = "2021"
 description = """
 Exposing macOS framework APIs to the Tectonic Rust code.
@@ -17,7 +17,7 @@ readme = "README.md"
 libc = "0.2"
 
 [build-dependencies]
-tectonic_cfg_support = { path = "../cfg_support", version = "0.0.0-dev.0" }
+tectonic_cfg_support = { path = "../cfg_support", version = ">=0.0.0+20260502,<1" }
 
 [package.metadata.internal_dep_versions]
 tectonic_cfg_support = "thiscommit:aeRoo7oa"
